@@ -1,0 +1,14 @@
+[
+  {
+    "azonosító": 1,
+    "uzemanyagTipus": "benzin"
+  },
+  {
+    "azonosító": 2,
+    "uzemanyagTipus": "dízel"
+  },
+  {
+    "azonosító": 3,
+    "uzemanyagTipus": "elektromos"
+  }
+]

@@ -1,0 +1,41 @@
+<h1>Cars List</h1>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+        <th>Azonosító</th>
+        <th>Rendszám</th>
+        <th>Márka</th>
+        <th>Űrtartalom</th>
+        <th>Ár</th>
+    </tr>
+  </thead>
+  <tr *ngFor="let car of cars">
+    <td>{{car.azonosito}}</td>
+    <td>{{car.rendszam}}</td>
+    <td>{{car.marka}}</td>
+    <td>{{car.urtartalom}}</td>
+    <td>{{car.ar}}</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td>Rendszám</td>
+    <td><input type="text" id="rendszam" class="form-control" [(ngModel)]="rendszam"></td>
+  </tr>
+  <tr>
+    <td>Márka</td>
+    <td><input type="text" id="marka" class="form-control" [(ngModel)]="marka"></td>
+  </tr>
+  <tr>
+    <td>Űrtartalom</td>
+    <td><input type="text" id="urtartalom" class="form-control" [(ngModel)]="urtartalom"></td>
+  </tr>
+  <tr>
+    <td>Ár</td>
+    <td><input type="text" id="ar" class="form-control" [(ngModel)]="ar"></td>
+  </tr>
+</table>
+
+<button (click)="addCar()" class= "btn btn-primary mt-2" title="Mentés">Mentés</button>
